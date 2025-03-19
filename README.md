@@ -1,37 +1,37 @@
-# push_swap - Ordenamiento de Stacks
+# push_swap - Stack Sorting
 
-**push_swap** es un proyecto en **C** que implementa un algoritmo de ordenamiento de números utilizando dos stacks. El objetivo principal es ordenar una serie de números en la pila A, utilizando operaciones permitidas en las stacks y minimizando el número de movimientos.
+**push_swap** is a project in **C** that implements a sorting algorithm for numbers using two stacks. The main objective is to sort a series of numbers in stack A, using allowed operations on the stacks and minimizing the number of moves.
 
-## Objetivo
+## Objective
 
-El proyecto tiene como objetivo implementar un programa que ordene números de una pila utilizando un mínimo de instrucciones. El programa debe ser capaz de ordenar una serie de números enteros en una pila A, utilizando una segunda pila B como auxiliar.
+The goal of the project is to implement a program that sorts numbers from a stack using a minimal number of instructions. The program should be able to sort a series of integers in stack A, using a second stack B as auxiliary.
 
-## Operaciones Permitidas
+## Allowed Operations
 
-El programa puede utilizar las siguientes operaciones:
+The program can use the following operations:
 
-- `sa`: Intercambia los dos primeros elementos del stack A.
-- `sb`: Intercambia los dos primeros elementos del stack B.
-- `ss`: Realiza `sa` y `sb` al mismo tiempo.
-- `pa`: Toma el primer elemento del stack B y lo coloca en la pila A.
-- `pb`: Toma el primer elemento del stack A y lo coloca en la pila B.
-- `ra`: Desplaza todos los elementos del stack A una posición hacia arriba.
-- `rb`: Desplaza todos los elementos del stack B una posición hacia arriba.
-- `rr`: Realiza `ra` y `rb` al mismo tiempo.
-- `rra`: Desplaza todos los elementos del stack A una posición hacia abajo.
-- `rrb`: Desplaza todos los elementos del stack B una posición hacia abajo.
-- `rrr`: Realiza `rra` y `rrb` al mismo tiempo.
+- `sa`: Swaps the first two elements of stack A.
+- `sb`: Swaps the first two elements of stack B.
+- `ss`: Performs `sa` and `sb` simultaneously.
+- `pa`: Takes the first element of stack B and puts it into stack A.
+- `pb`: Takes the first element of stack A and puts it into stack B.
+- `ra`: Moves all elements of stack A one position up.
+- `rb`: Moves all elements of stack B one position up.
+- `rr`: Performs `ra` and `rb` simultaneously.
+- `rra`: Moves all elements of stack A one position down.
+- `rrb`: Moves all elements of stack B one position down.
+- `rrr`: Performs `rra` and `rrb` simultaneously.
 
-## Compilación
+## Compilation
 
-Para compilar el proyecto, ejecuta el comando `make` en el directorio raíz:
+To compile the project, run the `make` command in the root directory:
 
 ```bash
 make
 ```
 
-## Ejecución
+## Execution
 
 ```bash
-./push_swap <números>
+./push_swap <numbers>
 ```
